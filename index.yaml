@@ -1,0 +1,49 @@
+name: A+ test course in the yaml format
+start: 2020-07-01 12:00
+end: 2025-07-01 12:00
+language: en
+static_dir: static
+
+modules:
+    - key: links1
+      name: Links 1
+      type: always_open
+      points_to_pass: 0
+      children:
+          - key: hello_python
+            type: normal
+            config: exercises/hello_python/config.yaml
+            max_points: 5
+          - key: chapter1
+            name: Chapter 1
+            type: chapter
+            static_content: chapter1.html
+            children:
+                - key: quiz1
+                  type: normal
+                  status: unlisted
+                  config: exercises/arithmetic.yaml
+
+module_types:
+    always_open:
+        open: 2020-07-01 12:00
+        close: 2021-07-01 12:00
+        status: ready
+
+exercise_types:
+    normal:
+        points_to_pass: 0
+        category: normal_exercises
+        status: ready
+        max_submissions: 99
+    chapter:
+        category: chapters
+        status: ready
+
+categories:
+    normal_exercises:
+        name: Exercises
+        status: ready
+    chapters:
+        name: Chapters
+        status: nototal
