@@ -18,7 +18,7 @@ Doc link in the same module
    :doc:`chapter2`
 
 Doc link in another module
-   :doc:`../links2/chapter1`
+   :doc:`Luku 1 moduulissa links2 <../links2/chapter1>`
 
 Ref link in the same module
    :ref:`m01 quiz <m01-quiz>`

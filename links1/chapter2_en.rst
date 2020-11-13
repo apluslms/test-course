@@ -22,8 +22,8 @@ Download this :download:`example code <files/example.py>`.
 Links
 -----
 
-Doc link in the same module
-   :doc:`chapter1`
+Doc link in the same module (with language suffix)
+   :doc:`chapter1_en`
 
 Doc link in another module
    :doc:`../links2/chapter2`

@@ -22,8 +22,8 @@ Lataa tämä :download:`esimerkkikoodi <files/example.py>`.
 Linkit
 ------
 
-Doc link in the same module
-   :doc:`chapter1`
+Doc link in the same module (with language suffix)
+   :doc:`chapter1_fi`
 
 Doc link in another module
    :doc:`../links2/chapter2`
