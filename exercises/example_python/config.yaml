@@ -12,6 +12,9 @@ files:
 model_files:
   - exercises/example_python/model.py
 
+template_files:
+  - exercises/example_python/submission_template.py
+
 radar_info:
   tokenizer: python
   minimum_match_tokens: 3
