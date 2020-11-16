@@ -11,6 +11,14 @@ Here is an image.
 .. image:: /images/apluslogo.png
   :alt: Aplus logo
 
+Files
+-----
+
+Download this :download:`example code <files/example.py>`.
+
+.. literalinclude:: files/example.py
+  :linenos:
+
 Links
 -----
 
@@ -88,6 +96,11 @@ Simple Python programming exercise.
 
   .. image:: /images/apluslogo.png
     :alt: Aplus logo
+
+  Download this :download:`example code <files/example.py>`.
+
+  .. literalinclude:: files/example.py
+    :linenos:
 
   **Links**
 

@@ -11,6 +11,14 @@ Tässä on kuva.
 .. image:: /images/apluslogo.png
   :alt: Aplus-logo
 
+Tiedostot
+---------
+
+Lataa tämä :download:`esimerkkikoodi <files/example.py>`.
+
+.. literalinclude:: files/example.py
+  :linenos:
+
 Linkit
 ------
 
@@ -88,6 +96,11 @@ Yksinkertainen Python-ohjelmointitehtävä.
 
   .. image:: /images/apluslogo.png
     :alt: Aplus-logo
+
+  Lataa tämä :download:`esimerkkikoodi <files/example.py>`.
+
+  .. literalinclude:: files/example.py
+    :linenos:
 
   **Linkkejä**
 

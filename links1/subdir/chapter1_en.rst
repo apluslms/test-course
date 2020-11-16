@@ -91,6 +91,11 @@ Questionnaire
   .. image:: /images/apluslogo.png
     :alt: Aplus logo
 
+  Download this :download:`example code <../files/example.py>`.
+
+  .. literalinclude:: ../files/example.py
+    :linenos:
+
   .. freetext:: 5
 
     Write ``testsub`` here.
