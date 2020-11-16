@@ -47,3 +47,73 @@ Doc link to the parent chapter in a subdirectory
 Doc link in a nested chapter
    :doc:`subdir/chapter2a`
 
+Ref link to the questionnaire in the subdirectory chapter
+   :ref:`m01 subdir quiz <m01-subdir-quiz>`
+
+Ref link to the image in the questionnaire in the subdirectory chapter
+   :ref:`m01 subdir quiz image <m01-subdir-quiz-img>`
+
+
+.. _m01-python:
+
+Python exercise
+---------------
+
+Simple Python programming exercise.
+
+.. submit:: examplepython1 100
+  :title: Python Example
+  :submissions: 99
+  :points-to-pass: 50
+  :config: exercises/example_python/config.yaml
+
+  In this exercise, you must implement a function ``greeting`` that takes **one parameter** and
+  **returns** the string :literal:`Hello, \ ` appended with the parameter value and ``!``.
+
+  **Here is an image.**
+
+  .. _m01-python-img:
+
+  .. image:: /images/apluslogo.png
+    :alt: Aplus logo
+
+  **Links**
+
+  Doc link in the same module
+     :doc:`chapter2`
+
+  Doc link in another module, different format
+     :doc:`chapter1 in links2 <../links2/chapter1>`
+
+  Ref link in the same module
+     :ref:`m01 quiz <m01-quiz>`
+
+  Ref link inside the questionnaire
+     :ref:`m01 quiz image <m01-quiz-img>`
+
+  Ref link in another module
+     :ref:`m02 quiz <m02-quiz>`
+
+  Absolute external link
+     Open `Google search <https://www.google.com>`_.
+
+  Doc link in the same module in a subdirectory
+     :doc:`subdir/chapter1`
+
+  Doc link to the parent chapter of nested chapters
+     :doc:`chapter3index`
+
+  Doc link in a nested chapter
+     :doc:`chapter3a`
+
+  Doc link to the parent chapter in a subdirectory
+     :doc:`subdir/chapter2index`
+
+  Doc link in a nested chapter
+     :doc:`subdir/chapter2a`
+
+  Ref link to the questionnaire in the subdirectory chapter
+     :ref:`m01 subdir quiz <m01-subdir-quiz>`
+
+  Ref link to the image in the questionnaire in the subdirectory chapter
+     :ref:`m01 subdir quiz image <m01-subdir-quiz-img>`
