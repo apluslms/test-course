@@ -40,6 +40,24 @@ Ref link in another module
 External link
    Open `Google search <https://www.google.com>`_.
 
+Ref link to the questionnaire in the subdirectory chapter
+   :ref:`m01 subdir quiz <m01-subdir-quiz>`
+
+Ref link to the image in the questionnaire in the subdirectory chapter
+   :ref:`m01 subdir quiz image <m01-subdir-quiz-img>`
+
+Manually written link to a model solution
+   `Model solution of links1/chapter2 quiz <../../links1/chapter2/links1_chapter2_linkquiz/info/model/>`_
+
+Manually written link to a model solution
+   `Model solution of links1/chapter1 Python exercise <../../links1/chapter1/links1_chapter1_examplepython1/info/model/>`_
+
+Manually written link to an exercise template file
+   `Template file of links1/chapter1 Python exercise <../../links1/chapter1/links1_chapter1_examplepython1/info/template/>`_
+
+Manually written link to the model solution of the subdirectory chapter
+   `Model solution of links1/subdir/chapter1 quiz <../../links1/subdir_chapter1/links1_subdir_chapter1_linksubdirquiz/info/model/>`_
+
 
 .. _m01-subdir-quiz:
 
@@ -99,4 +117,22 @@ Questionnaire
 
   Doc link in a nested chapter in the parent directory
      :doc:`../chapter3a`
+
+  Ref link to the questionnaire in the subdirectory chapter
+     :ref:`m01 subdir quiz <m01-subdir-quiz>`
+
+  Ref link to the image in the questionnaire in the subdirectory chapter
+     :ref:`m01 subdir quiz image <m01-subdir-quiz-img>`
+
+  Manually written link to a model solution
+     `Model solution of links1/chapter2 quiz <../../links1/chapter2/links1_chapter2_linkquiz/info/model/>`_
+
+  Manually written link to a model solution
+     `Model solution of links1/chapter1 Python exercise <../../links1/chapter1/links1_chapter1_examplepython1/info/model/>`_
+
+  Manually written link to an exercise template file
+     `Template file of links1/chapter1 Python exercise <../../links1/chapter1/links1_chapter1_examplepython1/info/template/>`_
+
+  Manually written link to the model solution of the subdirectory chapter
+     `Model solution of links1/subdir/chapter1 quiz <../../links1/subdir_chapter1/links1_subdir_chapter1_linksubdirquiz/info/model/>`_
 
