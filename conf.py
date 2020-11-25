@@ -39,7 +39,23 @@ category_names = {
         'fi': 'Palaute',
         'en': 'Feedback',
     },
+    'jututfeedback': {
+        'fi': 'Jutut-palaute',
+        'en': 'Jutut feedback',
+    },
 }
+
+override = {
+    'jututfeedback': {
+        'url': 'http://jutut:8082/feedback/defaultcourse/{key}',
+        'max_points': 2,
+        'points_to_pass': 1,
+    },
+}
+
+append_content = [
+    '_config_aplus/confirm_the_level_with_feedback.yaml',
+]
 
 # Define the base URL of the ACOS exercises if the default value is incorrect.
 # The internal IP address of the ACOS container should be used in local testing

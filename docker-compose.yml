@@ -42,3 +42,13 @@ services:
       - grader
     #volumes:
     #  - ./_data/acos/:/var/log/acos
+  jutut:
+    image: apluslms/run-mooc-jutut:2.3.0
+    volumes:
+      - data:/data
+      # mount development version to /src/jutut
+      #- /home/user/mooc-jutut/:/src/jutut/:ro
+      # or to /srv/jutut
+      #- /home/user/mooc-jutut/:/srv/jutut/:ro
+    ports:
+      - "8082:8082"

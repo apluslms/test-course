@@ -1,0 +1,7 @@
+# This file is used in the append_content setting in conf.py.
+# It modifies the confirm_the_level setting for the feedback
+# category.
+
+categories:
+  jututfeedback:
+    confirm_the_level: True
