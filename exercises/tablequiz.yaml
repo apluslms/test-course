@@ -1,0 +1,233 @@
+---
+title: Questionnaire with table-radio and table-checkbox questions
+description: Questionnaire with table-radio and table-checkbox questions
+instructions: |
+    <p>
+    Please respond to the queries below.
+    <p>
+
+max_points: 120
+view_type: access.types.stdsync.createForm
+fieldgroups:
+
+  - title: Participation
+    fields:
+
+    - title: |
+        Check the box to participate in this test.
+      type: checkbox
+      points: 10
+      key: participate
+      options:
+        - label: I want to participate
+          value: yes
+
+  - title: Background information
+    fields:
+
+    - title: |
+        E-mail address:
+      type: text
+      key: email
+      required: true
+      points: 10
+
+    - title: |
+        I can speak the following languages
+        (please choose at least one):
+      type: checkbox
+      key: languages
+      required: true
+      points: 10
+      options:
+        - correct: "neutral"
+          label: Finnish
+          value: fi
+        - correct: "neutral"
+          label: Swedish
+          value: sv
+        - correct: "neutral"
+          label: English
+          value: en
+
+    - title: |
+        Highest degree completed this far:
+      type: checkbox
+      key: degree
+      required: true
+      points: 10
+      options:
+        - correct: "neutral"
+          label: highschool or similar
+          value: highschool
+        - correct: "neutral"
+          label: B.Sc in Aalto
+          value: aalto-bsc
+        - correct: "neutral"
+          label: B.Sc in some other university
+          value: other-bsc
+        - correct: "neutral"
+          label: M.Sc
+          value: msc
+        - correct: "neutral"
+          label: other
+          value: other
+
+    - title: |
+        Study credits (ECTS) completed in studies (in Aalto) so far:
+      type: text
+      key: credits
+      required: true
+
+    - title: |
+        Programming languages that I know well enough to code with them:
+      type: text
+      key: programming-languages
+
+    - title: |
+        I could work x hours per week during the next autumn and/or next spring term:
+      type: checkbox
+      key: teach-hours
+      required: true
+      options:
+        - correct: "neutral"
+          label: 1-5 h/week
+          value: 1-5
+        - correct: "neutral"
+          label: 6-10 h/week
+          value: 6-10
+        - correct: "neutral"
+          label: 11-15 h/week
+          value: 11-15
+        - correct: "neutral"
+          label: 16-20 h/week
+          value: 16-20
+        - correct: "neutral"
+          label: over 20 h/week
+          value: 20+
+
+  - title: Primary programming languages in different courses
+    fields:
+
+    - title: |
+        Select the primary programming language used in each course.
+      type: table-radio
+      points: 5
+      options:
+        - label: Python
+          value: python
+          selected: yes
+        - label: Scala
+          value: scala
+        - label: Java
+          value: java
+        - label: C
+          value: c
+        - label: SQL
+          value: sql
+      more_text: Voluntary comments
+      rows:
+        - label: CS-A1120 Programming 2
+          key: CS-A1120
+          correct_options: [false, true, false, false, false]
+          hint: This is the Scala version for the School of Science students.
+          points: 5
+        - label: CS-A1121 Ohjelmoinnin peruskurssi Y2
+          key: CS-A1121
+          correct_options: [true, false, false, false, false]
+          hint: This is the Python version for the students outside School of Science.
+          points: 5
+        - label: CS-A1150 Tietokannat/Databases
+          key: CS-A1150
+          correct_options: [false, false, false, false, true]
+          hint: This is the database course.
+          points: 5
+        - label: "CS-C2120 Ohjelmointistudio 2"
+          key: CS-C2120
+          correct_options: [false, true, false, false, false]
+          hint: This is the Scala version for the School of Science students.
+          points: 5
+        - label: "ELEC-A7100 Basic Course in C programming"
+          key: ELEC-A7100
+          correct_options: [false, false, false, true, false]
+          hint: This is the C course in the School of Electrical Engineering.
+          points: 5
+
+  - title: Required programming language skills in different positions
+    fields:
+
+    - title: |
+        Select the programming languages that are needed in each job position.
+      type: table-checkbox
+      points: 5
+      options:
+        - label: Python
+          value: python
+        - label: Scala
+          value: scala
+        - label: Java
+          value: java
+        - label: C
+          value: c
+        - label: SQL
+          value: sql
+      more_text: Voluntary comments
+      rows:
+        - label: Django web developer
+          key: django
+          correct_options: [true, false, false, false, true]
+          hint: Django is a Python web framework. Web apps use databases.
+          points: 10
+        - label: Frontend designer
+          key: frontenddesign
+          correct_options: [false, false, false, false, false]
+          hint: Frontend designers do not program with procedural languages.
+          points: 5
+        - label: Database designer
+          key: dbdesign
+          correct_options: [false, false, false, false, true]
+          hint: They develop queries using the standard query language for databases.
+          points: 5
+        - label: Linux kernel developer
+          key: linuxdev
+          correct_options: [false, false, false, true, false]
+          hint: The Linux kernel is mostly implemented in the C language.
+          points: 10
+        - label: Enterprise software developer
+          key: enterprisedev
+          correct_options: [false, false, true, false, true]
+          hint: Enterprise software tends to use Java and databases.
+          points: 5
+
+  - title: Motivation and other comments
+    fields:
+
+      - title: "Short motivation letter:"
+        more: |
+          <p>
+          Describe your motivation to participate in this test.
+          </p>
+        type: textarea
+        key: motivation-letter
+        required: yes
+        points: 10
+
+      - title: "Other comments (optional):"
+        type: textarea
+        key: other-comments
+        points: 0
+
+  - title: Attachments
+    fields:
+
+      - title: ''
+        type: static
+        more: |
+          <p>Please supply any relevant attachments as TXT files below (plain text with UTF-8 encoding).</p>
+          <p><strong>All attachments are optional.</strong></p>
+      - title: cv.txt
+        type: file
+        key: cv
+      - title: application.txt
+        type: file
+        key: application

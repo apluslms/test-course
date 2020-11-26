@@ -1,0 +1,232 @@
+---
+title: Test Teaching Assistant Pool for spring
+description: Pool for spring
+instructions: |
+    <p>
+    Please respond (in Finnish, Swedish, or English)
+    to the queries below.
+    <br>
+    Asterisked fields are mandatory and must be completed.
+    <p>
+
+    <p>Thank you!</p>
+
+    <p><i>
+    Please note that you may resubmit the form to update your
+    information and preferences as you like.
+    The most recent submission will apply when teaching allocations
+    are made.
+    </i></p>
+    <p><i>
+    You can remove yourself from the pool just as easily as you signed up &mdash; just
+    resubmit the query form with the participation box unchecked.
+    </i></p>
+
+max_points: 10
+view_type: access.types.stdsync.createForm
+fieldgroups:
+
+  - title: Participation
+    fields:
+
+    - title: |
+        Check the box to participate in the pool, uncheck and submit to resign:
+      type: checkbox
+      points: 10
+      key: participate
+      options:
+        - label: I want to participate in the Teaching Assistant Pool
+          value: yes
+
+  - title: Background information
+    fields:
+
+    - title: |
+        E-mail address:
+      type: text
+      key: email
+      required: true
+
+    - title: |
+        I can teach with the following languages
+        (please choose at least one):
+      type: checkbox
+      key: languages
+      required: true
+      options:
+        - correct: "neutral"
+          label: Finnish
+          value: fi
+        - correct: "neutral"
+          label: Swedish
+          value: sv
+        - correct: "neutral"
+          label: English
+          value: en
+
+    - title: |
+        Highest degree completed this far:
+      type: checkbox
+      key: degree
+      required: true
+      options:
+        - correct: "neutral"
+          label: highschool or similar
+          value: highschool
+        - correct: "neutral"
+          label: B.Sc in Aalto
+          value: aalto-bsc
+        - correct: "neutral"
+          label: B.Sc in some other university
+          value: other-bsc
+        - correct: "neutral"
+          label: M.Sc
+          value: msc
+        - correct: "neutral"
+          label: other (include into your motivation letter)
+          value: other
+
+    - title: |
+        Number of semesters (Autumn, Spring) enrolled in university-level studies:
+      type: text
+      key: semesters
+      required: true
+
+    - title: |
+        Study credits (ECTS) completed in studies (in Aalto) so far:
+      type: text
+      key: credits
+      required: true
+
+    - title: |
+        Grade point average (GPA) of studies (in Aalto) so far:
+      type: text
+      key: gpa
+      required: true
+
+    - title: |
+        Programming languages that I know well enough to teach them:
+      type: text
+      key: programming-languages
+
+    - title: |
+        I could teach x hours per week during next autumn and/or next spring term:
+      type: checkbox
+      key: teach-hours
+      required: true
+      options:
+        - correct: "neutral"
+          label: 1-5 h/week
+          value: 1-5
+        - correct: "neutral"
+          label: 6-10 h/week
+          value: 6-10
+        - correct: "neutral"
+          label: 11-15 h/week
+          value: 11-15
+        - correct: "neutral"
+          label: 16-20 h/week
+          value: 16-20
+        - correct: "neutral"
+          label: over 20 h/week
+          value: 20+
+
+  - title: Preferences for specific courses
+    fields:
+
+    - title: |
+        Select a single course as 1st, 2nd, and 3rd preference,
+        and give the grade that you have received from the course.
+        Mark the other courses, you are interested, with No preference -button,
+        and mark the courses you are not interested or you have not taken
+        (or have not equivalent knowledge otherwise) with Not interested -button:
+      type: table-radio
+      options:
+        - label: 1st
+          value: 1
+        - label: 2nd
+          value: 2
+        - label: 3rd
+          value: 3
+        - label: No preference
+          value: 0
+        - label: Not interested
+          value: 9999
+          selected: yes
+      more_text: Received grade
+      rows:
+        - label: CS-A1120 Programming 2
+          key: CS-A1120
+        - label: CS-A1121 Ohjelmoinnin peruskurssi Y2
+          key: CS-A1121
+        - label: CS-A1130 Tietotekniikka sovelluksissa
+          key: CS-A1130
+        - label: CS-A1150 Tietokannat
+          key: CS-A1150
+        - label: "CS-C2120 Ohjelmointistudio 2"
+          key: CS-C2120
+        - label: "CS-C2105 Programming Studio A"
+          key: CS-C2105
+        - label: CS-C2160 Theory of Computation
+          key: CS-C2160
+        - label: CS-C3240 Machine learning
+          key: CS-C3240
+        - label: CS-E4160 Laboratory Works in Networking and Security
+          key: CS-E4160
+        - label: CS-E4350 Security Engineering
+          key: CS-E4350
+        - label: CS-E4640 Big Data Platforms
+          key: CS-E4640
+        - label: CS-E4800 Artificial Intelligence
+          key: CS-E4800
+        - label: CS-E4840 Information Visualization
+          key: CS-E4840
+        - label: CS-E4890 Deep Learning
+          key: CS-E4890
+        - label: CS-E4950 Software Architectures
+          key: CS-E4950
+
+  - title: Motivation and other comments
+    fields:
+
+      - title: "Short motivation letter:"
+        more: |
+          <p>
+          Please EITHER write your job application here OR give it as an attachment below (comment here). In the application,
+          tell your motivation why do you want to become a teaching assistant, your previous
+          experience that may help, etc.
+          </p>
+        type: textarea
+        key: motivation-letter
+        required: yes
+        points: 0
+
+      - title: "Further preferences (optional):"
+        type: textarea
+        key: further-preferences
+        points: 0
+
+      - title: "Other comments (optional):"
+        type: textarea
+        key: other-comments
+        points: 0
+
+  - title: Attachments
+    fields:
+
+      - title: ''
+        type: static
+        more: |
+          <p>Please supply any relevant attachments as PDF files below.
+          Name your attachment with your own name, like "firstname_lastname_transcript.pdf"</p>
+          <p><strong>Supply at least your recent study transcript and cv as attachments.</strong> If you resubmit your application, please, include all the attachments also in the resubmission, because only your most recent submission will be valid.</p>
+      - title: study-transcript.pdf
+        type: file
+        key: transcript
+        #required: yes
+      - title: cv.pdf
+        type: file
+        key: cv
+      - title: application.pdf
+        type: file
+        key: application

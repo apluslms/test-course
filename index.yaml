@@ -21,8 +21,22 @@ modules:
             children:
                 - key: quiz1
                   type: normal
+                  max_points: 9
                   status: unlisted
                   config: exercises/arithmetic.yaml
+    - key: quiz
+      name: Questionnaires
+      type: always_open
+      points_to_pass: 0
+      children:
+          - key: tablequiz
+            type: normal
+            max_points: 120
+            config: exercises/tablequiz.yaml
+          - key: tapool
+            type: normal
+            max_points: 10
+            config: exercises/tapool.yaml
 
 module_types:
     always_open:
