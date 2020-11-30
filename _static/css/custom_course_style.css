@@ -1,0 +1,4 @@
+/* Add some custom CSS styles for the sake of testing. */
+#exercise-page-content h1::after {
+	content: url("../h1.ico");
+}
