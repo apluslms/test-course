@@ -9,3 +9,4 @@ Other content is not visible in A+.
 
   links1/index
   links2/index
+  style/index
