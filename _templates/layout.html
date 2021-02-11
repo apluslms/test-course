@@ -2,8 +2,17 @@
 
 {% block extrahead %}
 
-<!--  MathJax (LaTex math) -->
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" data-aplus></script>
+<!--  MathJax (LaTex math)
+There is no data-aplus attribute here because conf.py includes MathJax.js
+in the A+ course head URLs. The Moodle Astra plugin does not work
+if MathJax.js is included in every chapter file with the data-aplus attribute
+because Moodle already includes the JS code at any rate and MathJax.js
+breaks completely if the library is included multiple times in
+the same HTML document. The Moodle Astra plugin does not use the course
+head URLs setting at all, whereas A+ includes the JS in every course page.
+-->
+<script type="text/javascript" async id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- Custom course styles -->
 <link rel="stylesheet"

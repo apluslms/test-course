@@ -25,6 +25,9 @@ program_default_submissions = 10
 default_max_group_size = 1
 use_wide_column = False
 static_host = os.environ.get('STATIC_CONTENT_HOST')
+course_head_urls = [
+    'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+]
 
 # Define the base URL of the ACOS exercises if the default value is incorrect.
 # The internal IP address of the ACOS container should be used in local testing
