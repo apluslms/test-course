@@ -49,6 +49,13 @@ sys.path.append(os.path.abspath('a-plus-rst-tools/directives'))
 
 # -- General configuration ------------------------------------------------
 
+override = {
+    'questionnaire': {
+        'allow_assistant_viewing': True,
+        'allow_assistant_grading': True,
+    },
+}
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 
