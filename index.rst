@@ -11,3 +11,4 @@ Other content is not visible in A+.
   links2/index
   style/index
   active_elements/index
+  questionnaire/index
