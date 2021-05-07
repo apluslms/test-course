@@ -23,7 +23,7 @@ Länkar
 ------
 
 Doc link in the same module (with language suffix)
-   :doc:`chapter1_en`
+   :doc:`chapter1_sv`
 
 Doc link in another module
    :doc:`../links2/chapter2`
