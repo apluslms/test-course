@@ -42,7 +42,7 @@ Status: hidden
 Status: enrollment
 ------------------
 .. questionnaire:: status_enrollment
-  :title: Question with a ``enrollment`` status. The questionnaire is shown only to enrolled students.
+  :title: Question with a ``enrollment`` status. Internal students use this to enrol in the course.
   :submissions: 4
   :category: Status
   :status: enrollment
@@ -60,7 +60,7 @@ Status: enrollment
 Status: enrollment_ext
 ----------------------
 .. questionnaire:: status_enrollment_ext
-  :title: Question with a ``enrollment_ext`` status. The questionnaire is shown only to enrolled external students.
+  :title: Question with a ``enrollment_ext`` status. External students use this to enrol in the course.
   :submissions: 4
   :category: Status
   :status: enrollment_ext
