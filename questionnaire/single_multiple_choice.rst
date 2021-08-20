@@ -144,7 +144,7 @@ Randomized answers for a multiple-choice questionnaire
     *c. :math:`(2+2+2+2+2) \times 2`
     d. :math:`50 \div 4`
     e. :math:`6+4+8+4`
-    *f. :math:`6 \times 2+2`
+    *f. :math:`9 \times 2+2`
     g. :math:`2 \times 8+3`
     h. :math:`6+3+6+6`
     *i. :math:`4 \times (2+3)`
@@ -162,20 +162,20 @@ Randomized answers for a multiple-choice questionnaire
     *c. :math:`(2+2+2+2+2) \times 2`
     d. :math:`50 \div 4`
     e. :math:`6+4+8+4`
-    *f. :math:`6 \times 2+2`
-    g. :math:`2 \times 8+3`
+    *f. :math:`9 \times 2+2`
+    g. :math:`2 \times 8+2`
     h. :math:`6+3+6+6`
     *i. :math:`4 \times (2+3)`
 
-    !a § This is correct. Multiplication.
-    !b § This is correct. Division.
-    !c § This is correct. Sum and Multiplication.
-    d § Incorrect answer. The solution of this operation is not equal to 20.
-    e § Incorrect answer. Please try again.
-    !f § This is correct. Multiplication and Sum with operator precedence.
+    a § This is correct. Multiplication :math:`5 \times 4 = 4+4+4+4+4`.
+    b § This is correct. Division :math:`40 \div 2 = 20 and 2*20 = 40`
+    c § This is correct. Sum and Multiplication :math:`(2+2+2+2+2) \times 2 = 10 \times 2`
+    d § Incorrect answer. The solution of this operation is not equal to 20. :math:`4 * 20 = 80 \neq 50`
+    e § Incorrect answer. Please try again. :math:`6+4+8+4 = 22`
+    f § This is correct. Multiplication and Sum with operator precedence. :math:`9 \times 2+2 = 18 + 2`
     g § Incorrect. Remember the operator precedence.
     h § Incorrect. Verify your results.
-    !i § This is correct. Sum and multiplication with grouping symbols.
+    i § This is correct. Sum and multiplication with grouping symbols. :math:`4 \times (2+3) = 4 \times 5`
 
 Pass without full points
 ------------------------
