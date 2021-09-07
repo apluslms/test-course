@@ -4,7 +4,7 @@ volumes:
   data:
 services:
   grader:
-    image: apluslms/run-mooc-grader:1.8
+    image: apluslms/run-mooc-grader:1.10
     volumes:
       - data:/data
       - /var/run/docker.sock:/var/run/docker.sock
@@ -17,7 +17,7 @@ services:
     ports:
       - "8080:8080"
   plus:
-    image: apluslms/run-aplus-front:1.8
+    image: apluslms/run-aplus-front:1.10
     volumes:
       - data:/data
       # mount the A+ code
