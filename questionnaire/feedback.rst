@@ -29,6 +29,7 @@ Questionnaire feedback
 
   .. pick-any:: 10
     :required:
+    :checkbox-feedback:
 
     **Modifiers used in this question:** ``required``.
 
@@ -52,7 +53,7 @@ Questionnaire feedback
     e § Remember that :math:`x^2 = q \leftrightarrow x = \pm \sqrt{q}`
     !f § option **-5** must be selected.
     f § This is correct
-    g. § This is a neutral answer
+    g § This is a neutral answer
 
 .. questionnaire:: feedback-given-when-correct-answers-are-not-selected 25
   :title: Provide feedback when the correct answers are not selected by students
@@ -143,7 +144,7 @@ Questionnaire feedback
     a § Rather close. Remember that you can add or subtract the same number to both sides of the equation.
     d § No. This equation has a nice and easy solution.
     e § Remember that :math:`x^2 = q \leftrightarrow x = \pm \sqrt{q}`
-    g. § This is a neutral answer
+    g § This is a neutral answer
 
 
 .. questionnaire:: no-feedback 20
