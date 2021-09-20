@@ -67,6 +67,9 @@ if on_container:
 else:
     acos_submit_base_url = 'https://acos.cs.aalto.fi'
 
+enable_doc_link_multilang_suffix_correction = True
+enable_ref_link_multilang_suffix_correction = True
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
