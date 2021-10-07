@@ -26,7 +26,7 @@ default_max_group_size = 1
 use_wide_column = False
 static_host = os.environ.get('STATIC_CONTENT_HOST')
 course_head_urls = [
-    'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML',
 ]
 
 include_annotated_js = True
