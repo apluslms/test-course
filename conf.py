@@ -29,6 +29,9 @@ course_head_urls = [
     'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
 ]
 
+include_annotated_js = True
+include_annotated_css = True
+
 # Define the base URL of the ACOS exercises if the default value is incorrect.
 # The internal IP address of the ACOS container should be used in local testing
 # and in production, the URL of the ACOS production server.
@@ -70,6 +73,7 @@ extensions = [
     'media',
     'point_of_interest',
     'row',
+    'annotated',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
