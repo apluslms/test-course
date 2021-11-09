@@ -1,0 +1,27 @@
+title: Example Python Exercise with an HTML template
+description: Simple Python exercise with python-grader-utils
+template: ./exercises/example_python/template.html
+feedback_template: ./exercises/example_python/feedback_template.html
+#instructions: |
+#    Implement a function named greeting that takes one parameter and
+#    returns the string &quot;Hello, &quot; appended with the parameter value and
+#    &quot;!&quot;.
+view_type: access.types.stdasync.acceptFiles
+files:
+  - field: file1
+    name: submission.py
+
+model_files:
+  - exercises/example_python/model.py
+
+template_files:
+  - exercises/example_python/submission_template.py
+
+radar_info:
+  tokenizer: python
+  minimum_match_tokens: 3
+
+container:
+  image: apluslms/grade-python:3.7-3.3-3.2u2
+  mount: exercises/example_python
+  cmd: graderutils

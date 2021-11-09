@@ -12,3 +12,4 @@ Other content is not visible in A+.
   style/index
   active_elements/index
   questionnaire/index
+  test_exercises/index

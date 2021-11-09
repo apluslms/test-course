@@ -1,0 +1,12 @@
+<h2>Custom feedback HTML template</h2>
+
+<p>Points: {{ result.points }} / {{ result.max_points  }}</p>
+
+<h3>Output from the grader</h3>
+
+{{ result.out|safe }}
+
+{% if result.error %}
+	<h3>Errors</h3>
+	{{ result.error }}
+{% endif %}

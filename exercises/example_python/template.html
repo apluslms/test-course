@@ -1,0 +1,16 @@
+{% extends 'access/exercise_frame.html' %}
+
+{% block exercise %}
+{% if not result.error %}
+<div class="instructions">
+	<p>
+	Implement a function named greeting that takes one parameter and
+	returns the string &quot;Hello, &quot; appended with the parameter value and
+	&quot;!&quot;.
+	</p>
+</div>
+{% endif %}
+
+{% include 'access/accept_files_form.html' %}
+{% endblock %}
+
