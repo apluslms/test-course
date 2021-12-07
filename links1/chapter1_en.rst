@@ -155,3 +155,18 @@ Simple Python programming exercise.
   Manually written link to the model solution of the subdirectory chapter
      `Model solution of links1/subdir/chapter1 quiz <../links1/subdir_chapter1/links1_subdir_chapter1_linksubdirquiz/info/model/>`_
 
+
+Small quiz
+----------
+
+.. questionnaire:: verysmallquiz 8
+  :title: Very small quiz
+  :submissions: 3
+
+  .. pick-one:: 8
+
+    Pick ``1``.
+
+    *a. 1
+    b. 2
+    c. 3
