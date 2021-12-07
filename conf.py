@@ -70,6 +70,8 @@ else:
 enable_doc_link_multilang_suffix_correction = True
 enable_ref_link_multilang_suffix_correction = True
 
+enable_autosave = True
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
