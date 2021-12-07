@@ -10,3 +10,4 @@ Muu sisältö ei näy A+:ssa.
   links1/index_fi
   links2/index_fi
   jututfeedback/index_fi
+  chapters_only_module/index_fi

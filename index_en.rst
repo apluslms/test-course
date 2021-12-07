@@ -10,3 +10,4 @@ Other content is not visible in A+.
   links1/index_en
   links2/index_en
   jututfeedback/index_en
+  chapters_only_module/index_en
