@@ -4,7 +4,8 @@ volumes:
   data:
 services:
   grader:
-    image: apluslms/run-mooc-grader:1.10
+    image: apluslms/run-mooc-grader:1.11
+    #command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 manage.py runserver 0.0.0.0:8080"]
     volumes:
       - data:/data
       - /var/run/docker.sock:/var/run/docker.sock
@@ -16,8 +17,12 @@ services:
       #- .:/srv/grader/courses/default:ro
     ports:
       - "8080:8080"
+      - "5679:5678"
   plus:
-    image: apluslms/run-aplus-front:1.10
+    image: apluslms/run-aplus-front:1.11
+    #command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 manage.py runserver 0.0.0.0:8000"]
+    environment:
+      APLUS_ENABLE_DJANGO_DEBUG_TOOLBAR: 'false'
     volumes:
       - data:/data
       # mount the A+ code
@@ -28,6 +33,7 @@ services:
       #- ./tools/test-bench-course-mod.py:/srv/test-bench-course-mod.py:ro
     ports:
       - "8000:8000"
+      - "5678:5678"
     depends_on:
       - grader
   acos:
