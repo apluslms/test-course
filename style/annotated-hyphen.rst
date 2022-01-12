@@ -1,5 +1,5 @@
-Annotated code blocks
-=====================
+Annotated code blocks and hyphen in the chapter name
+====================================================
 
 Test the annotated directive.
 
@@ -106,10 +106,10 @@ Lineref code block
   :linenos:
 
   def example():
-      :my-label-name:var = "something"
+      :my-label-name2:var = "something"
       return var
 
-  :code-qwe:qwerty
+  :code-qwe2:qwerty
   qwerty
   qwerty
   qwerty
@@ -122,33 +122,34 @@ Lineref code block
   qwerty
   qwerty
   qwerty
-  qwerty
-  qwerty
-  qwerty
-  qwerty
-  qwerty
-  qwerty
-  qwerty
+  :code-last:qwerty
 
 The role lref makes it possible to link to labels defined in lineref-code-block blocks:
-:lref:`optional link text <my-label-name>`.
+:lref:`optional link text <my-label-name2>`.
 
+Another link :lref:`here <code-last>`.
+
+Another link :lref:`here too <code-qwe2>`.
 
 scroll down
 
-scrol down
+scroll down
 
-scrol down
+scroll down
 
-scrol down
+scroll down
 
-scrol down
+scroll down
 
-scrol down
+scroll down
 
-scrol down
+scroll down
 
-scrol down
+scroll down
+
+scroll down
+
+scroll down
 
 scroll down
 

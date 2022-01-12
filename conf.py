@@ -74,6 +74,7 @@ extensions = [
     'point_of_interest',
     'row',
     'annotated',
+    'codeblock_lineref',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
