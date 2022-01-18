@@ -1,0 +1,12 @@
+{% extends 'access/exercise_frame.html' %}
+{% load i18n %}
+
+{% block exercise %}
+{% if not result.error %}
+
+Implement a function named <code>times_two</code> that takes one parameter and
+returns it multiplied by two.
+
+{% include 'access/accept_files_form.html' %}
+{% endif %}
+{% endblock %}

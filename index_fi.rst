@@ -11,3 +11,4 @@ Muu sisältö ei näy A+:ssa.
   links2/index_fi
   jututfeedback/index_fi
   chapters_only_module/index_fi
+  exercises_module/index_fi

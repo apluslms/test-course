@@ -1,0 +1,21 @@
+description: Simple Python exercise with python-grader-utils
+template: ./exercises/using_template/template.html
+view_type: access.types.stdasync.acceptFiles
+files:
+  - field: file1
+    name: submission.py
+
+model_files:
+  - exercises/using_template/model.py
+
+template_files:
+  - exercises/using_template/submission_template.py
+
+radar_info:
+  tokenizer: python
+  minimum_match_tokens: 3
+
+container:
+  image: apluslms/grade-python:3.9-4.4-4.0
+  mount: exercises/using_template
+  cmd: graderutils
