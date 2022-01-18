@@ -45,9 +45,12 @@ category_names = {
     },
 }
 
+on_container = static_host and '8080' in static_host
+
 override = {
     'jututfeedback': {
-        'url': 'http://jutut:8082/feedback/defaultcourse/{key}',
+        'url': ('http://jutut:8082/feedback/testcoursemultilang/{key}' if on_container
+                else 'https://jutut.minus.cs.aalto.fi/feedback/testcoursemultilang/{key}'),
         'max_points': 2,
         'points_to_pass': 1,
     },
@@ -60,10 +63,9 @@ append_content = [
 # Define the base URL of the ACOS exercises if the default value is incorrect.
 # The internal IP address of the ACOS container should be used in local testing
 # and in production, the URL of the ACOS production server.
-on_container = static_host and '8080' in static_host
 if on_container:
     # The static IP address can be defined in docker-compose.yml.
-    acos_submit_base_url = 'http://172.21.0.4:3000'
+    acos_submit_base_url = 'http://acos:3000'
 else:
     acos_submit_base_url = 'https://acos.cs.aalto.fi'
 
