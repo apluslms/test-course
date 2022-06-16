@@ -4,7 +4,7 @@ volumes:
   data:
 services:
   grader:
-    image: apluslms/run-mooc-grader:1.12
+    image: apluslms/run-mooc-grader:1.14
     #command: ["sh", "-c", "pip3 install debugpy -t /tmp && python3 /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 manage.py runserver 0.0.0.0:8080"]
     volumes:
       - data:/data
@@ -18,7 +18,7 @@ services:
       - "8080:8080"
       - "5679:5678"
   plus:
-    image: apluslms/run-aplus-front:1.12
+    image: apluslms/run-aplus-front:1.14
     #command: ["sh", "-c", "pip3 install debugpy -t /tmp && python3 /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 manage.py runserver 0.0.0.0:8000"]
     environment:
       APLUS_ENABLE_DJANGO_DEBUG_TOOLBAR: 'false'
