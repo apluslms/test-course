@@ -4,7 +4,7 @@ volumes:
   data:
 services:
   grader:
-    image: apluslms/run-mooc-grader:1.12
+    image: apluslms/run-mooc-grader:1.17
     #command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 manage.py runserver 0.0.0.0:8080"]
     volumes:
       - data:/data
@@ -19,7 +19,7 @@ services:
       - "8080:8080"
       - "5679:5678"
   plus:
-    image: apluslms/run-aplus-front:1.12
+    image: apluslms/run-aplus-front:1.18
     #command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 manage.py runserver 0.0.0.0:8000"]
     volumes:
       - data:/data
